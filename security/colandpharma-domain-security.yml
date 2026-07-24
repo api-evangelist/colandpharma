@@ -1,0 +1,76 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/WHOIS/HTTP probes of the apis.yml Website host (colandpharma.com)
+summary: >-
+  colandpharma.com is a registered but dormant domain. It delegates to nameservers
+  but publishes no A/AAAA, MX, TXT, SPF, DMARC or CAA records, so there is no
+  reachable website, mail surface or API surface to assess. All probe results below
+  are verified absences, not failures to probe.
+hosts:
+- host: colandpharma.com
+  https: false
+  resolves: false
+  http_status: null
+  error: NXDOMAIN-equivalent (NOERROR, zero answers) — no A/AAAA record
+- host: www.colandpharma.com
+  https: false
+  resolves: false
+  http_status: null
+- host: api.colandpharma.com
+  https: false
+  resolves: false
+  http_status: null
+- host: docs.colandpharma.com
+  https: false
+  resolves: false
+  http_status: null
+- host: developer.colandpharma.com
+  https: false
+  resolves: false
+  http_status: null
+domains:
+- domain: colandpharma.com
+  registered: true
+  dnssec: false
+  a_record: false
+  mx: false
+  spf: false
+  dmarc: false
+  dmarc_policy: null
+  caa: []
+  nameservers:
+  - a6.share-dns.com
+  - b6.share-dns.net
+  authoritative_answer: >-
+    Queried the authoritative nameserver directly; it returned no A record, confirming
+    the zone carries no host content rather than a resolver-side failure.
+registration:
+  registrar: Gname.com Pte. Ltd.
+  registrar_iana_id: 1923
+  registrar_whois: whois.gname.com
+  created: '2007-09-21'
+  updated: '2025-11-20'
+  expires: '2027-09-21'
+  status:
+  - clientTransferProhibited
+  dnssec: unsigned
+  source: whois.verisign-grs.com
+findings:
+- id: no-web-presence
+  severity: info
+  detail: >-
+    No HTTP(S) endpoint exists on the apex or any probed subdomain, so TLS version,
+    certificate expiry and HSTS could not be evaluated.
+- id: no-mail-authentication
+  severity: info
+  detail: >-
+    No MX, SPF or DMARC records are published. The domain sends and receives no mail
+    as configured.
+- id: dnssec-unsigned
+  severity: info
+  detail: The domain is not DNSSEC signed (confirmed by WHOIS and absent DS/DNSKEY records).
+- id: registration-current
+  severity: info
+  detail: >-
+    Registration is active and was renewed through 2027-09-21, so the domain is held
+    rather than abandoned — consistent with a parked or pre-launch holding.

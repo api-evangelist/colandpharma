@@ -1,7 +1,27 @@
 aid: colandpharma
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/colandpharma.png
 name: colandpharma
-description: colandpharma is a company surfaced as a portfolio company of qiming and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  colandpharma was surfaced as a portfolio company of Qiming Venture Partners and added to
+  the API Evangelist network as a stub for enrichment. Enrichment probing on 2026-07-20 found
+  no public surface to profile: colandpharma.com is registered (created 2007-09-21, renewed
+  through 2027-09-21, Gname.com registrar) and delegates to share-dns nameservers, but the zone
+  publishes no A/AAAA, MX, TXT, SPF, DMARC or CAA records. The apex and the www, api, docs and
+  developer subdomains do not resolve, and the authoritative nameserver itself returns no host
+  records, confirming a dormant or parked domain rather than a transient outage. There is
+  consequently no website, developer portal, documentation, or API surface to catalog. This
+  record is retained as a lead; re-run enrichment if the domain is ever brought online.
 url: https://raw.githubusercontent.com/api-evangelist/colandpharma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +29,16 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-status: dns-no-record
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Pharmaceuticals
+- Health
+- Venture Backed
+- Dormant
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +48,10 @@ maintainers:
 common:
 - type: Website
   url: https://colandpharma.com
+- type: DomainSecurity
+  url: security/colandpharma-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
