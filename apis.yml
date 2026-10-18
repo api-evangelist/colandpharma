@@ -48,6 +48,11 @@ tags:
 - Company
 - Pharmaceuticals
 - Health
+- Dormant
+tags_raw:
+- Company
+- Pharmaceuticals
+- Health
 - Venture Backed
 - Dormant
 apis: []
